@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bookkeeping/B_Page/B_Page.dart';
 
 void main() {
   runApp(MyApp());
@@ -74,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         actions: [
           IconButton(
-              onPressed: (){},
+              onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => BPage()));},
               icon: Icon(Icons.ac_unit)),
           IconButton(
               onPressed: (){},
