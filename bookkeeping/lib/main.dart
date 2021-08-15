@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: MyHomePage(title: 'Flutter 學習'),
     );
@@ -76,8 +76,10 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         actions: [
           IconButton(
-              onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => BPage()));},
-              icon: Icon(Icons.ac_unit)),
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => BPage()));
+                },
+              icon: Icon(Icons.account_balance)),
           IconButton(
               onPressed: (){},
               icon: Text("2")),
