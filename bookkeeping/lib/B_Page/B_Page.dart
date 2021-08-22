@@ -47,6 +47,16 @@ class BPage extends StatelessWidget {
               )
             ],
           ),
+          bottomNavigationBar: BottomNavigationBar( // 底部导航
+            items: <BottomNavigationBarItem>[
+              BottomNavigationBarItem(icon: Icon(Icons.home), label:"Home"),
+              BottomNavigationBarItem(icon: Icon(Icons.business), label:"Business"),
+              BottomNavigationBarItem(icon: Icon(Icons.school), label:"School"),
+            ],
+            currentIndex: 1,//_selectedIndex,
+            fixedColor: Colors.blue,
+            // onTap: _onItemTapped,
+          ),
         ),
       ),
     );

@@ -3,7 +3,8 @@ import 'package:bookkeeping/B_Page/B_Page.dart';
 import 'package:bookkeeping/Drawer_Page/Drawer_Page.dart';
 
 void main() {
-  runApp(MyApp());
+  // runApp(MyApp());
+  runApp(BPage());
 }
 
 class MyApp extends StatelessWidget {
