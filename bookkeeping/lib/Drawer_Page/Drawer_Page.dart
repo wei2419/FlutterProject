@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class MyDrawerPage extends StatelessWidget{
+class DrawerPage extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return ListView(

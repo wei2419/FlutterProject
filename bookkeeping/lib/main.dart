@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:bookkeeping/Drawer_Page/Drawer_Page.dart';
 
-import 'Stting_Page/Setting_Page.dart';
+import 'Setting_Page/Setting_Page.dart';
 
 void main() {
   // runApp(MyApp());
@@ -39,7 +39,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  int test=0;
   void _onItemTapped(int index) {
     setState(() {
       NavigatorState nav=Navigator.of(context);
@@ -67,9 +66,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       drawer:Drawer(
-        child: MyDrawerPage(),
+        child: DrawerPage(),
       ),
-      body: Text('$test'),
+      body: Text('test'),
       bottomNavigationBar: BottomNavigationBar( // 底部导航
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label:""),
@@ -79,7 +78,6 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(icon: Icon(Icons.settings), label:"設定"),
         ],
         currentIndex: 2,
-        // fixedColor: Colors.green,
         unselectedItemColor: Colors.blueGrey,
         selectedItemColor: Colors.blueGrey,
         showSelectedLabels: true,
@@ -89,7 +87,6 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: (){
           setState(() {
-            test=0;
           });
         },
         tooltip: 'Increment',
